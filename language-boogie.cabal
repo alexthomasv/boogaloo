@@ -53,7 +53,7 @@ library
       random ==1.0.*,
       containers >=0.4 && <0.6,
       mtl ==2.1.*,
-      ansi-wl-pprint >=0.6,
+      ansi-wl-pprint ==0.6.*,
       html ==1.*,
       parsec ==3.1.*,
       transformers ==0.3.*,
@@ -62,18 +62,20 @@ library
       syb >=0.1,
       lens >=4.13,
       logict,
-      z3 >=0.3
+      z3 ==4.3.1
 
 
 executable boogaloo
   main-is:             Boogaloo.hs
   ghc-options: -threaded
+  hs-source-dirs:      .
+  other-modules:       HtmlOutput
   build-depends:
       base ==4.*,
       random ==1.0.*,
       containers >=0.4 && <0.6,
       mtl ==2.1.*,
-      ansi-wl-pprint >=0.6,
+      ansi-wl-pprint ==0.6.*,
       html ==1.*,
       parsec ==3.1.*,
       transformers ==0.3.*,
@@ -82,7 +84,7 @@ executable boogaloo
       syb >=0.1,
       lens >=4.13,
       logict,
-      z3 >=0.3,
+      z3 ==4.3.1,
       language-boogie ==0.2.*,
       cmdargs ==0.10.*,
       time ==1.4.*,
@@ -99,7 +101,7 @@ test-suite boogaloo-test
       random ==1.0.*,
       containers >=0.4 && <0.6,
       mtl ==2.1.*,
-      ansi-wl-pprint >=0.6,
+      ansi-wl-pprint ==0.6.*,
       html ==1.*,
       parsec ==3.1.*,
       transformers ==0.3.*,
@@ -107,7 +109,7 @@ test-suite boogaloo-test
       random ==1.0.*,
       syb >=0.1,
       lens >=4.13,
-      z3 >=0.3,
+      z3 ==4.3.1,
       language-boogie ==0.2.*,
       filepath ==1.3.*,
       html ==1.*,
@@ -123,7 +125,7 @@ executable boogaloo-tests
       random ==1.0.*,
       containers >=0.4 && <0.6,
       mtl ==2.1.*,
-      ansi-wl-pprint >=0.6,
+      ansi-wl-pprint ==0.6.*,
       html ==1.*,
       parsec ==3.1.*,
       transformers ==0.3.*,
@@ -131,7 +133,7 @@ executable boogaloo-tests
       random ==1.0.*,
       syb >=0.1,
       lens >=4.13,
-      z3 >=0.3,
+      z3 ==4.3.1,
       language-boogie ==0.2.*,
       filepath ==1.3.*,
       html ==1.*,
